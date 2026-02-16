@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Kike</title>
+    <link rel="icon" type="image/x-icon" href="image.png">
+    <!-- DESAFÍO PLUS: Añadir favicon aquí -->
+</head>
+<body>
+
+    <!-- ====================
+         HEADER: Tu nombre y título profesional
+         ==================== -->
+    <header>
+        <!-- COMPLETAR: Tu nombre completo -->
+        <h1>Enrique Xavier Marin Feliciano</h1>
+
+        <!-- COMPLETAR: Tu título profesional o lo que estudias -->
+        <p>Cocinero con enfoque en áreas calientes y mesa fría.
+            <br>Estudiante de Ingeniería en Software de la Universidad de Colima
+        </p>
+    </header>
+
+    <!-- ====================
+         MAIN: Contenido principal del CV
+         ==================== -->
+    <main>
+
+        <!-- SECCIÓN: Sobre Mí -->
+        <section id="sobre-mi">
+            <h2>Sobre Mí</h2>
+
+            <!-- COMPLETAR: Breve descripción de ti (2-4 líneas) -->
+            <p>
+                Estudiante dedicado al aprendizaje. Lo importante en esta vida es aprender a aprender.
+                <br>Futuro programador. Siempre estoy abierto a aprender cosas nuevas y no me quejo.
+            </p>
+
+            <!-- OPCIONAL: Segundo párrafo si necesitas más espacio -->
+            <p>Hobbies:
+                <ul>
+                    <li>Estudiar</li>
+                    <li>Búsqueda constante de duendes</li>
+                    <li>Desarrollo de sitios web</li>
+                </ul>
+            </p>
+        </section>
+
+        <!-- SECCIÓN: Experiencia / Educación -->
+        <section id="experiencia">
+            <h2>Experiencia y Educación</h2>
+
+            <!-- Usamos una lista desordenada para items -->
+            <ul>
+                <!-- COMPLETAR: Item 1 -->
+                <li>
+                    <strong>Entrenador Olímpico para Educación Básica</strong> - [2023 - Presente]
+                    <br>
+                    Enseñanza del conocimiento fundamental de matemáticas olímpicas y su preparación para competencias.
+                </li>
+
+                <!-- COMPLETAR: Item 2 -->
+                <li>
+                    <strong>Cocinero especializado en plancha caliente</strong> - [2024 - Presente]
+                    <br>
+                    Preparación de alimentos como baguettes y carnes en plancha caliente.
+                </li>
+
+                <!-- COMPLETAR: Item 3 (opcional) -->
+                <li>
+                    <strong>Asistente personal</strong> - [2025 - Presente]
+                    <br>
+                    Apoyo en tareas administrativas y personales.
+                </li>
+            </ul>
+        </section>
+
+        <!-- SECCIÓN: Habilidades -->
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+
+            <!-- COMPLETAR: Lista de habilidades -->
+            <ul>
+                <li>[Habilidad 1: Trabajo en equipo]</li>
+                <li>[Habilidad 2: Facilidad de trabajo bajo presión]</li>
+                <li>[Habilidad 3: Facilidad de comunicación]</li>
+                <li>[Habilidad 4: Trabajo con infantes y herramientas didácticas]</li>
+            </ul>
+        </section>
+
+        <!-- SECCIÓN: Contacto (Formulario) -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+
+            <!-- 
+                FORMULARIO HTML5 CON VALIDACIÓN NATIVA
+                Nota: Esto no envía emails aún (necesita backend), 
+                pero valida que los datos sean correctos
+            -->
+            <form action="#" method="post">
+
+                <!-- Campo de Email con validación automática -->
+                <p>
+                    <label for="email">Tu Email:</label><br>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        placeholder="ejemplo@correo.com"
+                        required
+                    >
+                </p>
+
+                <!-- Campo de Nombre (requerido) -->
+                <p>
+                    <label for="nombre">Tu Nombre:</label><br>
+                    <input 
+                        type="text" 
+                        id="nombre" 
+                        name="nombre" 
+                        placeholder="¿Quién eres?"
+                        required
+                        minlength="2"
+                    >
+                </p>
+
+                <!-- Campo de Mensaje -->
+                <p>
+                    <label for="mensaje">Mensaje:</label><br>
+                    <textarea 
+                        id="mensaje" 
+                        name="mensaje" 
+                        rows="4" 
+                        cols="50"
+                        placeholder="Escribe tu mensaje aquí..."
+                        required
+                        minlength="10"
+                    ></textarea>
+                </p>
+
+                <!-- Botón de envío -->
+                <button type="submit">Enviar Mensaje</button>
+
+            </form>
+
+            <!-- Información de contacto directo -->
+            <p>
+                <strong>Email directo:</strong> [enriquemaxmar@gmail.com]<br>
+                <strong>Teléfono:</strong> [+52 312 188 8086]
+            </p>
+        </section>
+
+    </main>
+
+    <!-- ====================
+         FOOTER: Pie de página
+         ==================== -->
+    <footer>
+        <p>&copy; 2026 [Enrique Xavier Marin Feliciano]. CV creado con HTML5.</p>
+
+        <!-- OPCIONAL: Enlace a tu GitHub -->
+        <p>
+            <a href="https://github.com/Gutis007" target="_blank">
+                Ver mi GitHub
+            </a>
+        </p>
+    </footer>
+
+</body>
+</html>
