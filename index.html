@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>CV - Kike</title>
     <link rel="icon" type="image/x-icon" href="image.png">
     <!-- DESAFÍO PLUS: Añadir favicon aquí -->
@@ -12,7 +13,11 @@
     <!-- ====================
          HEADER: Tu nombre y título profesional
          ==================== -->
+    <div class="cv">
     <header>
+        <div class="pfp">
+            <img src="image.png">
+        </div>
         <!-- COMPLETAR: Tu nombre completo -->
         <h1>Enrique Xavier Marin Feliciano</h1>
 
@@ -140,7 +145,7 @@
                 </p>
 
                 <!-- Botón de envío -->
-                <button type="submit">Enviar Mensaje</button>
+                <button class="btn-submit" type="submit">Enviar Mensaje</button>
 
             </form>
 
@@ -152,18 +157,22 @@
         </section>
 
     </main>
+    </div>
 
     <!-- ====================
          FOOTER: Pie de página
          ==================== -->
     <footer>
-        <p>&copy; 2026 [Enrique Xavier Marin Feliciano]. CV creado con HTML5.</p>
+        <p>&copy; 2026 [Enrique Xavier Marin Feliciano]. <br>
+            CV creado con HTML5 y CSS3.</p>
 
         <!-- OPCIONAL: Enlace a tu GitHub -->
         <p>
-            <a href="https://github.com/Gutis007" target="_blank">
-                Ver mi GitHub
-            </a>
+            <div class="github-link">
+                <a href="https://github.com/Gutis007" target="_blank">
+                    Ver mi GitHub
+                </a>
+            </div>
         </p>
     </footer>
 
