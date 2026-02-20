@@ -64,12 +64,19 @@ body{
     padding: 20px;
 }
 
-#sobre-mi, #experiencia, #educacion, #habilidades, #contacto{
+#sobre-mi, #experiencia, #educacion, #habilidades, #contacto, #detalles{
     margin-bottom: 20px;
     padding: 10px;
     background: linear-gradient(-45deg, #23a6d5, #e73c7e);
     animation: infinite;
     border-radius: 8px;
+}
+
+summary{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
 }
 
 .btn-submit {
