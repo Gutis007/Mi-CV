@@ -117,7 +117,7 @@ h2, h3, h4{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #444 linear-gradient(to right, transparent 50%, var(--clr) 0);
+    background: conic-gradient(var(--clr) calc(var(--i) * 1%), transparent 0deg);
     margin-bottom: 15px;
 }
 
@@ -156,27 +156,14 @@ h2, h3, h4{
     text-transform: uppercase;
 }
 
-.glass-container .progress::before{
-    content: '';
-    display: block;
-    height: 100%;
-    margin-left: 50%;
-    transform-origin: left;
-    border-radius: 0 100% 100% 0/50%;
-}
-
 .glass-container .progress::after{
     content: '';
     position: absolute;
-    inset: 10px;
+    inset: 8px;
     border-radius: 50%;
     background: #222;
 }
 
-.glass-container .progress::before{
-    transform: rotate(calc(((var(--i) - 50) * 0.01turn)));
-    background: var(--clr);
-}
 
 footer {
     text-align: center;
