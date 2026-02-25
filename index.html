@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="function.js"></script>
     <title>CV - Enrique Marin</title>
     <link rel="icon" type="image/x-icon" href="favicon.png">
     <meta property="og:type" content="website">
@@ -26,14 +27,22 @@
             <figcaption>Enrique Xavier Marin Feliciano - Desarrollador Web | Cocinero especializado en plancha caliente</figcaption>
         </figure>
         <h1>Enrique Xavier Marin Feliciano | Estudiante y cocinero</h1>
+        <div class="abt-me-flex">
+            <div class="abt-col">
             <h2>Un poco sobre mí...</h2>
-            <p>Actualmente me encuentro cursando la carrera de Ingeniería en Software en la Universidad de Colima.<br> Además, me apasiona la cocina profesional y he tenido experiencias tratando con jóvenes para la enseñanza de matemáticas Olímpicas en el Estado.</p>
+            <p>Vivo mis días de estudiante universitario con entusiasmo, explorando nuevas tecnologías y desarrollando mis habilidades como ser humano.<br><br> Siempre estoy abierto a aprender nuevas cosas y ampliar mis conocimientos en cualquier área. <br><br> <span class="phrase">No sé, pero aprendo rápido</span>.</p>
+            </div>
+            <div class="abt-col">
+            <h2>Pasiones</h2>
+            <p>Desde adolescente desarrollé un gusto por la cocina profesional y en mi último par de años me he dedicado a ello de manera más seria, enfocándome en plancha caliente y emplatados llamativos. <br><br> En lo académico, me fascina el desarrollo de sitios web, pero sobre todo, me considero un entusiasta de la ciberseguridad y de la implementación de sistemas de seguridad informática.</p>
+            </div>
+        </div>
         </div>
     </header>
     <main>
-        <div class="cv-slider">
+        <div class="cv-slider" id="card-slider">
             <div class="cv-container">
-                <div class="glass-container" style="--r: -5;">
+                <div class="glass-container" style="--r: -6;">
                     <h2>Experiencia</h2>
                         <h3>Ayudante de Web Developer</h3>
                         <strong>2023 - 2024</strong>
@@ -41,6 +50,19 @@
                         <strong>2025 - 2026</strong>
                         <h3>Entrenador de matemáticas Olímpicas por el Comité de la Olimpiada de Matemáticas del Estado de Colima</h3>
                         <strong>2023 - Actualidad</strong>
+                </div>
+            </div>
+
+            <div class="cv-container">
+                <div class="glass-container" style="--r: -3;">
+                    <h2>Educación</h2>
+                    <h3>Universidad de Colima</h3>
+                    <h4>Ingeniería en Software</h4>
+                    <strong>2024 - Actualidad</strong>
+                    <p>Cursando la carrera de Ingeniería en Software, con un enfoque en desarrollo web y tecnologías emergentes.</p>
+                    <h3>Curso | Medidas de higiene y contaminación en una cocina profesional</h3>
+                    <h4>Portobivo</h4>
+                    <strong>2025</strong>
                 </div>
             </div>
 
@@ -67,9 +89,17 @@
                     </div>
                     </div>
                 </div>
-
                 <div class="cv-container">
-                <div class="glass-container" style="--r: 5;">
+                <div class="glass-container" style="--r: 3;">
+                    <h2>Referencias profesionales</h2>
+                    <h3>Ing. Daniel Gaytán</h3>
+                    <strong>Director General de Somos Hackers A.C.</strong>
+                    <h3>Fernando López</h3>
+                    <strong>Empleador del restaurante Portobivo</strong>
+                </div>
+                </div>
+                <div class="cv-container">
+                <div class="glass-container" style="--r: 6;">
                     <h2>Contacto</h2>
                     <form action="#" method="post">
                 <p>
@@ -89,7 +119,8 @@
                 </div>
         </div>
         </div>
-        </div>
+        <button class="arrow-slider prev" onclick="scrollSlider(-300)">←</button>
+        <button class="arrow-slider next" onclick="scrollSlider(300)">→</button>
     </main>
     <footer>
         <p>&copy; 2026 Enrique Xavier Feliciano. Todos los derechos reservados. <br> CV Web creado con HTML5 y CSS3</p>
